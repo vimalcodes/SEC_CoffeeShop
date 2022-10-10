@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancake Layout-1</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+
+        [class ^= "box-"] {
+            display: grid;
+            place-items: center;
+            border: solid 5px orange;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px black;
+            color: rgb(5, 5, 87);
+        }
+
+        body{
+            background: beige;
+            height: 100vh;
+        }
+
+        .beginner{
+            height: 90vh;
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: 50px;
+        }
+
+        .logo {
+            width: 100px;
+            cursor: pointer;
+            
+    
+        }
+
+        .nav {
+            padding: 10px;
+            background-color: aliceblue;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav"><nav>
+        <a href="/index.html"><img src="images/logo.png" class="logo"></a>
+        </nav></div>
+    
+    <div class="beginner">
+        <div class="box-1">Documentation</div>
+        <div class="box-2"><p>
+            Home page uses grid box column. It was tested out to see how to place content side by side. <br>
+            About Us uses grid box basic layout. <br>
+            Menu uses grid box repeat to align menu in card structure. 
+        </p></div>
+        <div class="box-3">Footer</div>
+    </div>
+
+</body>
+</html>

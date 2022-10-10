@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid_container {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr ;
+    grid-row-gap: 30px;
+}
+
+.nav_flex {
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    height: 100px;
+}
+
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    margin: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: orange;
+}
+
+nav ul li a:hover { /* When you hover over the navbar text, it will change color */
+    color:rgb(151, 230, 5);
+    text-decoration: underline;
+}
+
+.content_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-1{
+    background-color: brown;
+    padding: 10%;
+    border-radius: 30px;
+}
+
+.col-1 h4 {
+    font-size: 20px;
+    margin-bottom: 10px;;
+}
+.col-1 ol li {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.col-2{
+    padding: 10%;
+    border-radius: 30px;
+    background-color: blanchedalmond;
+}
+
+.col-2 h4 {
+    font-size: 20px;
+    margin-bottom: 10px;;
+}
+.col-2 ol li {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.footer_flex {
+    background-color: blueviolet;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+footer {
+    flex:1;
+    text-align: center;
+}
